@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="OmegaEnchantments:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/OmegaEnchantments_jar</output-path>
+    <root id="archive" name="OmegaEnchantments.jar">
+      <element id="module-output" name="OmegaEnchantments" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/plugin.yml" />
+    </root>
+  </artifact>
+</component>
