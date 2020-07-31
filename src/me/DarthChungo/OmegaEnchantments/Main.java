@@ -9,12 +9,12 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public class Main extends JavaPlugin implements Listener {
     public static Plugin getInstance() { return Bukkit.getPluginManager().getPlugin("OmegaEnchantments"); }
-    public EventManager eventManager;
 
     @Override
     public void onEnable() {
         EnchantmentManager.RegisterEnchantments();
-        eventManager = new EventManager();
+        CraftingManager.RegisterRecipies();
+        EventManager.RegisterEvents();
 
         this.getLogger().info("OmegaEnchantments by DarthChungo enabled.");
     }
