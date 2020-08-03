@@ -2,7 +2,7 @@ package me.DarthChungo.OmegaEnchantments.Events;
 
 import me.DarthChungo.OmegaEnchantments.Crafting.CraftingManager;
 import me.DarthChungo.OmegaEnchantments.Enchantments.EnchantmentManager;
-import me.DarthChungo.OmegaEnchantments.Main;
+import me.DarthChungo.OmegaEnchantments.PluginMain;
 import org.bukkit.Material;
 import org.bukkit.Sound;
 import org.bukkit.entity.Player;
@@ -44,7 +44,7 @@ public class Inventory implements Listener {
                             Objects.requireNonNull(event.getInventory().getItem(2)).setItemMeta(itemMeta);
                         }
                     }
-                }.runTask(Main.getInstance());
+                }.runTask(PluginMain.getInstance());
             }
         }
     }

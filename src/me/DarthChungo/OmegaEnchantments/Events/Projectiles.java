@@ -1,10 +1,11 @@
 package me.DarthChungo.OmegaEnchantments.Events;
 
 import me.DarthChungo.OmegaEnchantments.Enchantments.EnchantmentManager;
-import me.DarthChungo.OmegaEnchantments.Main;
+import me.DarthChungo.OmegaEnchantments.PluginMain;
 import org.bukkit.Color;
 import org.bukkit.Location;
 import org.bukkit.entity.Arrow;
+import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
@@ -30,7 +31,7 @@ public class Projectiles implements Listener {
                 if(item == null) continue;
 
                 if(item.isSimilar(MagicalGunpowderItem())) {
-                    proj.setMetadata("bow_explosive_level", new FixedMetadataValue(Main.getInstance(), 1));
+                    proj.setMetadata("bow_explosive_level", new FixedMetadataValue(PluginMain.getInstance(), 1));
                     proj.setColor(Color.SILVER);
 
                     item.setAmount(item.getAmount() - 1);
@@ -43,7 +44,7 @@ public class Projectiles implements Listener {
                 if(item == null) continue;
 
                 if(item.isSimilar(MagicalGunpowderItem())) {
-                    proj.setMetadata("bow_explosive_level", new FixedMetadataValue(Main.getInstance(), 2));
+                    proj.setMetadata("bow_explosive_level", new FixedMetadataValue(PluginMain.getInstance(), 2));
                     proj.setColor(Color.TEAL);
 
                     item.setAmount(item.getAmount() - 1);
@@ -71,10 +72,10 @@ public class Projectiles implements Listener {
         }
 
         if(arrow.getMetadata("bow_explosive_level").get(0).asInt() == 1) {
-            arrow.getWorld().createExplosion(loc, 6, false, false/*, (Entity) arrow.getShooter()*/);
+            arrow.getWorld().createExplosion(loc, 6, false, false, (Entity) arrow.getShooter());
 
         } else if(arrow.getMetadata("bow_explosive_level").get(0).asInt() == 2) {
-            arrow.getWorld().createExplosion(loc, 4, true, true/*, (Entity) arrow.getShooter()*/);
+            arrow.getWorld().createExplosion(loc, 4, true, true, (Entity) arrow.getShooter());
         }
 
         arrow.remove();

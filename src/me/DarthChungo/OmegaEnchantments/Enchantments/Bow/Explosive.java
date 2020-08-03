@@ -1,14 +1,14 @@
 package me.DarthChungo.OmegaEnchantments.Enchantments.Bow;
 
 import me.DarthChungo.OmegaEnchantments.Enchantments.CustomEnchantment;
-import me.DarthChungo.OmegaEnchantments.Main;
+import me.DarthChungo.OmegaEnchantments.PluginMain;
 import org.bukkit.NamespacedKey;
 import org.bukkit.enchantments.EnchantmentTarget;
 import org.bukkit.inventory.ItemStack;
 
 public class Explosive extends CustomEnchantment {
     public Explosive() {
-        super(new NamespacedKey(Main.getInstance(), "explosive"));
+        super(new NamespacedKey(PluginMain.getInstance(), "explosive"));
     }
 
     @Override
@@ -20,5 +20,5 @@ public class Explosive extends CustomEnchantment {
     @Override
     public String getName() { return "Explosive"; }
     @Override
-    public NamespacedKey getKey() { return new NamespacedKey(Main.getInstance(), "explosive"); }
+    public NamespacedKey getKey() { return new NamespacedKey(PluginMain.getInstance(), "explosive"); }
 }

@@ -1,7 +1,0 @@
-name: OmegaEnchantments
-version: "1.0"
-main: me.DarthChungo.OmegaEnchantments.Main
-description: "Adds various custom enchantments to the game."
-api-version: "1.15"
-load: STARTUP
-author: "DarthChungo"

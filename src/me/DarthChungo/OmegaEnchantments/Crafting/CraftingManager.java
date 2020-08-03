@@ -1,6 +1,6 @@
 package me.DarthChungo.OmegaEnchantments.Crafting;
 
-import me.DarthChungo.OmegaEnchantments.Main;
+import me.DarthChungo.OmegaEnchantments.PluginMain;
 import org.bukkit.inventory.ShapedRecipe;
 
 import javax.annotation.Nullable;
@@ -20,8 +20,8 @@ public class CraftingManager {
     }
 
     public static void RegisterRecipies() {
-        Main.getInstance().getServer().addRecipe(ExplosiveBowOneRecipe());
-        Main.getInstance().getServer().addRecipe(ExplosiveBowTwoRecipe());
-        Main.getInstance().getServer().addRecipe(MagicalGunpowderRecipe());
+        PluginMain.getInstance().getServer().addRecipe(ExplosiveBowOneRecipe());
+        PluginMain.getInstance().getServer().addRecipe(ExplosiveBowTwoRecipe());
+        PluginMain.getInstance().getServer().addRecipe(MagicalGunpowderRecipe());
     }
 }

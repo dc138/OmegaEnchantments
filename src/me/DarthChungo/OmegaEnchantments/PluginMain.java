@@ -5,11 +5,10 @@ import me.DarthChungo.OmegaEnchantments.Enchantments.EnchantmentManager;
 import me.DarthChungo.OmegaEnchantments.Events.EventManager;
 import org.bukkit.Bukkit;
 import org.bukkit.event.Listener;
-import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public class Main extends JavaPlugin implements Listener {
-    public static Plugin getInstance() { return Bukkit.getPluginManager().getPlugin("OmegaEnchantments"); }
+public class PluginMain extends JavaPlugin implements Listener {
+    public static PluginMain getInstance() { return (PluginMain) Bukkit.getPluginManager().getPlugin("OmegaEnchantments"); }
     public static int log(String message) { return getInstance().getServer().broadcastMessage(message);  }
 
     @Override

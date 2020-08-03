@@ -1,6 +1,6 @@
 package me.DarthChungo.OmegaEnchantments.Crafting.Recipes;
 
-import me.DarthChungo.OmegaEnchantments.Main;
+import me.DarthChungo.OmegaEnchantments.PluginMain;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
 import org.bukkit.inventory.ShapedRecipe;
@@ -9,7 +9,7 @@ import static me.DarthChungo.OmegaEnchantments.Crafting.Items.MagicalItem.Magica
 
 public class ExplosiveBow {
     public static ShapedRecipe ExplosiveBowOneRecipe() {
-        ShapedRecipe recipe = new ShapedRecipe(new NamespacedKey(Main.getInstance(), "explosive_bow_one"), MagicalItemItem());
+        ShapedRecipe recipe = new ShapedRecipe(new NamespacedKey(PluginMain.getInstance(), "explosive_bow_one"), MagicalItemItem());
         recipe.shape("abc", "def", "ghi");
 
         recipe.setIngredient('a', Material.GUNPOWDER);
@@ -26,7 +26,7 @@ public class ExplosiveBow {
     }
 
     public static ShapedRecipe ExplosiveBowTwoRecipe() {
-        ShapedRecipe recipe = new ShapedRecipe(new NamespacedKey(Main.getInstance(), "explosive_bow_two"), MagicalItemItem());
+        ShapedRecipe recipe = new ShapedRecipe(new NamespacedKey(PluginMain.getInstance(), "explosive_bow_two"), MagicalItemItem());
         recipe.shape("abc", "def", "ghi");
 
         recipe.setIngredient('a', Material.TNT);

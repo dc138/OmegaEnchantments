@@ -1,14 +1,14 @@
 package me.DarthChungo.OmegaEnchantments.Enchantments.All;
 
 import me.DarthChungo.OmegaEnchantments.Enchantments.CustomEnchantment;
-import me.DarthChungo.OmegaEnchantments.Main;
+import me.DarthChungo.OmegaEnchantments.PluginMain;
 import org.bukkit.NamespacedKey;
 import org.bukkit.enchantments.EnchantmentTarget;
 import org.bukkit.inventory.ItemStack;
 
 public class Glow extends CustomEnchantment {
     public Glow() {
-        super(new NamespacedKey(Main.getInstance(), "glow"));
+        super(new NamespacedKey(PluginMain.getInstance(), "glow"));
     }
 
     @Override
@@ -20,5 +20,5 @@ public class Glow extends CustomEnchantment {
     @Override
     public String getName() { return "Glow"; }
     @Override
-    public NamespacedKey getKey() { return new NamespacedKey(Main.getInstance(), "glow"); }
+    public NamespacedKey getKey() { return new NamespacedKey(PluginMain.getInstance(), "glow"); }
 }
