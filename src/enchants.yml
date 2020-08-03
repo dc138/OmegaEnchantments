@@ -1,0 +1,48 @@
+Bow:
+   Explosive: [DONE]
+     - Makes launched arrows explode if the user has magical gunpowder in the inventory.
+     - Two tiers of crafting.
+   Velocity:
+     - Makes arrows faster.
+     - One tier of crafting.
+
+Helemt:
+  Miner:
+    - Gives the user night vision if he is under Y = 63
+    - One tier of crafting.
+
+Chestplate:
+
+Leggings:
+
+Boots:
+  Double Jump:
+    - Gives theuser the avility to double jump.
+    - Has one tier of crafting.
+  Magma Walker:
+    - Allows you to walk over lava (similar to frost walker).
+    - One tier of crafing.
+
+Tools:
+  Smelting:
+    - Smelts mined items automatically.
+    - Has one tier of crafting.
+  Telekinesis:
+    - Automiatically puts mined items into the inventory of the player.
+    - Has one tier of crafting.
+
+Swords:
+  Thunderlord:
+    - Randomly summons lighting upon using a sword.
+    - Two tiers of crafting.
+  Shielding:
+    - Gives the holder a projectile shield upon right clicking. Has cooldown.
+    - Two tiers of crafting.
+  Experience:
+    - Gives the pkayer more XP upon killing mobs with this sword.
+    - Has two tiers of crafting.
+
+All:
+  Glow:
+    - Just glows the item that it is applied to.
+    - Non crafteable, internal.

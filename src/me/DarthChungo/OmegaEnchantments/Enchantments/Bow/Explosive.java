@@ -16,7 +16,7 @@ public class Explosive extends CustomEnchantment {
     @Override
     public boolean canEnchantItem(ItemStack itemStack) { return true; }
     @Override
-    public int getMaxLevel() { return 1; }
+    public int getMaxLevel() { return 2; }
     @Override
     public String getName() { return "Explosive"; }
     @Override
